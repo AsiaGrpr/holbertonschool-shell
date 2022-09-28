@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f,d -empty -maxdepth 0 -print | cut -d " " -f 9
+find . -empty -print | cut -d " " -f 9

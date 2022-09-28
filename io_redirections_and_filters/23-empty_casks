@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type fd -empty -mindepth | cut -d -f 9
+find . -type fd -empty -mindepth 1 | cut -d " " -f 9

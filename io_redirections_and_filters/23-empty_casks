@@ -1,2 +1,2 @@
 #!/bin/bash
-find ./ -type d -empty -print %p -o -type f -empty -print %p
+find * -type d,f -empty -print %p

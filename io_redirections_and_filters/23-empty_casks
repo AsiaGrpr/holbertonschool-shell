@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lRa | find . -type d,f  -empty | cut -d " " -f 9 -s
+find . -empty -printf "%f\n"

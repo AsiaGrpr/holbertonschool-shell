@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty -print | cut -d " " -f 9
+find ./ -type d -empty -print %p -o -type f -empty -print %p

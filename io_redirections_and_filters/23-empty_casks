@@ -1,2 +1,2 @@
 #!/bin/bash
-find * -type d,f -empty -print %p
+find . -name "*" -empty -print | cut -d " " -f 9 -s

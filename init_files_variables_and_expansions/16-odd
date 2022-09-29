@@ -1,2 +1,2 @@
 #!/bin/bash
-ls [[:digit:]]* | cut -d ":" -f 1 
+ls [[:digit:]]* | grep -E '^1?[0-9]?[02468]$' | cut -d ":" -f 1 

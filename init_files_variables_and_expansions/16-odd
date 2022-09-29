@@ -1,2 +1,2 @@
 #!/bin/bash
-ls [[:digit:]]* | printf '%ds/$/  /\n'
+ls [[:digit:]]* | paste -sd "\t\n"

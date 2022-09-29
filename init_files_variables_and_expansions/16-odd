@@ -1,2 +1,2 @@
 #!/bin/bash
-grep [:lower:] -vn | uniq -u | cut -d ":" -f 1 
+grep [[:lower:]] -vn | uniq -u | cut -d ":" -f 1 

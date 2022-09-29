@@ -1,2 +1,2 @@
 #!/bin/bash
-grep * -n | uniq -u | cut -d ":" -f 1 
+ls -a | cut -d ":" -f 1 

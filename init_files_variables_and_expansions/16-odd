@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -C [[:digit:]]* 
+ls [[:digit:]]* | paste -sd "\t\n" 

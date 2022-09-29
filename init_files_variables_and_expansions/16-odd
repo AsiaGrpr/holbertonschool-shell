@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s\n" | grep -v -n 2
+printf "%s\n"

@@ -97,3 +97,9 @@ fi
 #if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 #    . /etc/bash_completion
 #fi
+
+#custom aliases
+alias ch='chmod u+x'
+alias ga='git add'
+alias gc='git commit -m'
+alias v='vim'

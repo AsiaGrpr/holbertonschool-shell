@@ -1,0 +1,26 @@
+2022-11-14 05:41:19.550 [info] Extension host with pid 665 started
+2022-11-14 05:41:19.921 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2022-11-14 05:41:20.031 [error] No bundle location found for extension vscode.git-base
+2022-11-14 05:41:20.084 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/b2d49934112f3f32d917c852afc995e3/vscode.lock': Lock acquired.
+2022-11-14 05:41:20.126 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2022-11-14 05:41:20.129 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2022-11-14 05:41:20.140 [error] No bundle location found for extension vscode.git
+2022-11-14 05:41:20.140 [error] No bundle location found for extension vscode.github
+2022-11-14 05:41:20.920 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2022-11-14 05:41:20.922 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+2022-11-14 05:41:20.928 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2022-11-14 05:41:20.931 [info] Eager extensions activated
+2022-11-14 05:41:21.032 [error] No bundle location found for extension vscode.debug-auto-launch
+2022-11-14 05:41:21.032 [error] No bundle location found for extension vscode.emmet
+2022-11-14 05:41:21.032 [error] No bundle location found for extension vscode.merge-conflict
+2022-11-14 05:43:11.349 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2022-11-14 05:43:11.354 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2022-11-14 05:43:11.355 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2022-11-14 05:43:11.356 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+2022-11-14 05:43:11.400 [error] No bundle location found for extension vscode.configuration-editing
+2022-11-14 05:43:11.400 [error] No bundle location found for extension vscode.extension-editing
+2022-11-14 05:43:11.400 [error] No bundle location found for extension vscode.json-language-features
+2022-11-14 05:43:12.040 [info] Extension host terminating: received terminate message from renderer
+2022-11-14 05:43:12.048 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/b2d49934112f3f32d917c852afc995e3/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2022-11-14 05:43:12.119 [error] No bundle location found for extension vscode.npm
+2022-11-14 05:43:12.326 [info] Extension host with pid 665 exiting with code 0

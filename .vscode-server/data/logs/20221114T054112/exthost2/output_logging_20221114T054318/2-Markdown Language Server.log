@@ -1,0 +1,260 @@
+[Trace 13:49:13.344] VsCodeClientWorkspace: TextDocument.onDidOpen: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:13.360] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:13.371] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:13.442] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 1
+[Debug 13:49:13.446] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:13.523] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:13.947] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 1
+[Debug 13:49:13.953] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:16.011] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:16.024] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:16.117] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:16.124] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:16.305] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:16.311] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:16.465] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:16.472] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:16.726] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:16.789] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:16.794] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:17.027] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:17.169] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:17.229] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:17.434] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:17.751] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 7
+[Debug 13:49:17.753] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:17.955] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 7
+[Trace 13:49:18.446] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:18.455] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:18.770] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 8
+[Debug 13:49:18.773] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:18.847] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 8
+[Debug 13:49:18.850] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:19.457] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:19.461] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:19.679] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 9
+[Debug 13:49:19.684] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:19.720] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:19.725] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:19.933] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 10
+[Debug 13:49:19.935] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:19.950] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:19.958] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:20.173] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 11
+[Debug 13:49:20.181] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:20.200] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:20.292] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 11
+[Trace 13:49:20.488] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:20.491] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:20.642] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:20.646] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:20.849] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 13
+[Debug 13:49:20.851] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:20.888] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:20.917] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:20.926] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:21.073] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:21.075] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:21.297] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 15
+[Debug 13:49:21.301] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:21.310] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:21.315] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:21.499] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 16
+[Debug 13:49:21.501] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:21.535] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:21.539] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:21.706] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:21.709] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:21.916] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 18
+[Debug 13:49:21.921] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:21.953] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:21.981] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:21.985] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:22.187] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 19
+[Debug 13:49:22.191] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:22.235] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:22.335] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 19
+[Trace 13:49:22.382] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:22.385] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:22.576] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 20
+[Debug 13:49:22.578] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:22.628] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:22.728] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 20
+[Trace 13:49:22.859] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:22.862] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:23.066] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 21
+[Debug 13:49:23.068] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:23.206] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 21
+[Debug 13:49:23.207] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:23.638] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:23.640] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:23.847] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 22
+[Debug 13:49:23.849] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:23.900] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:23.924] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:23.926] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:24.134] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 23
+[Debug 13:49:24.136] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:24.177] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:24.213] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:24.218] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:24.420] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 24
+[Debug 13:49:24.424] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:24.461] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:24.565] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 24
+[Trace 13:49:24.602] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:24.604] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:24.757] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:24.759] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:24.906] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:24.908] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:25.113] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 27
+[Debug 13:49:25.114] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:25.182] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:25.185] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:25.369] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:25.376] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:25.487] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:25.497] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:25.657] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:25.659] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:25.842] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 31
+[Debug 13:49:25.843] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:25.995] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 31
+[Debug 13:49:26.000] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:26.615] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:26.619] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:26.789] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 32
+[Debug 13:49:26.790] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:26.812] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:26.815] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:27.022] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:27.025] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:27.229] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 34
+[Debug 13:49:27.231] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:27.268] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:27.371] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 34
+[Trace 13:49:27.402] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:27.405] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:27.604] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 35
+[Debug 13:49:27.607] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:27.649] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:27.677] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:27.679] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:27.857] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:27.859] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:28.041] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 37
+[Debug 13:49:28.042] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:28.095] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:28.148] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:28.151] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:28.339] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 38
+[Debug 13:49:28.339] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:28.385] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:28.537] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 38
+[Trace 13:49:29.187] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:29.188] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:29.393] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 39
+[Debug 13:49:29.394] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:29.435] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:29.531] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 39
+[Trace 13:49:29.673] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:29.676] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:29.751] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:29.755] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:29.836] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:29.838] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:29.912] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:29.914] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:30.034] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:30.038] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:30.097] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:30.101] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:30.161] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:30.163] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:30.253] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:30.259] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:30.333] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:30.335] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:30.509] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:30.511] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:30.688] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 49
+[Debug 13:49:30.694] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:30.831] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 49
+[Debug 13:49:30.833] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:31.499] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:31.502] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:31.687] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 50
+[Debug 13:49:31.689] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:31.718] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:31.791] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:31.797] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:31.988] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:31.991] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:32.192] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 52
+[Debug 13:49:32.197] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:32.323] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 52
+[Debug 13:49:32.323] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:33.383] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:33.384] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:33.585] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 53
+[Debug 13:49:33.587] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:33.636] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:33.734] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 53
+[Trace 13:49:34.160] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:34.163] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:34.365] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 54
+[Debug 13:49:34.367] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:34.487] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 54
+[Debug 13:49:34.488] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:42.483] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:42.486] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:42.680] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 55
+[Debug 13:49:42.682] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:42.718] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:42.852] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 55
+[Trace 13:49:44.732] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:44.733] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:44.826] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:44.828] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:45.023] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 57
+[Debug 13:49:45.024] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:45.174] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 57
+[Debug 13:49:45.176] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:45.364] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:45.365] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:45.507] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:45.508] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:45.702] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:45.704] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:45.908] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 60
+[Debug 13:49:45.911] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:45.943] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:46.053] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 60
+[Trace 13:49:47.540] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:47.546] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:47.718] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:47.720] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:47.941] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 62
+[Debug 13:49:47.942] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:47.974] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:48.005] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:48.006] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:48.187] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 63
+[Debug 13:49:48.189] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:48.332] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 63
+[Debug 13:49:48.333] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:48.409] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:48.412] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:48.617] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 64
+[Debug 13:49:48.619] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:48.650] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:48.651] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:48.842] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 65
+[Debug 13:49:48.843] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 13:49:48.896] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:49:49.001] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md 65
+[Trace 13:50:04.516] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:50:05.554] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:50:07.867] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 13:50:07.870] VsCodeClientWorkspace: TextDocument.onDidClose: file:///root/holbertonschool-low_level_programming/holbertonschool-low_level_programming/singly_linked_lists/README.md

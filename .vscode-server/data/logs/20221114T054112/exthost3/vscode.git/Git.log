@@ -1,0 +1,17 @@
+2022-11-14 06:14:16.987 [info] Validating found git in: git
+2022-11-14 06:14:16.988 [info] Using git 2.25.1 from git
+2022-11-14 06:14:16.988 [info] > git rev-parse --show-toplevel [50ms]
+2022-11-14 06:14:16.998 [info] > git rev-parse --git-dir --git-common-dir [206ms]
+2022-11-14 06:14:17.041 [info] Log level: Info
+2022-11-14 06:14:17.041 [info] Open repository: /root/holbertonschool-printf
+2022-11-14 06:14:17.133 [info] > git remote --verbose [61ms]
+2022-11-14 06:14:17.142 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [82ms]
+2022-11-14 06:14:17.162 [info] > git status -z -uall [85ms]
+2022-11-14 06:14:17.171 [info] > git config --get commit.template [44ms]
+2022-11-14 06:14:17.240 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [42ms]
+2022-11-14 06:14:17.377 [info] > git status -z -uall [60ms]
+2022-11-14 06:14:17.384 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [89ms]
+2022-11-14 06:14:17.396 [info] > git remote --verbose [90ms]
+2022-11-14 06:14:17.415 [info] > git config --get commit.template [65ms]
+2022-11-14 06:14:17.487 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [45ms]
+2022-11-14 06:14:17.704 [info] > git check-ignore -v -z --stdin [30ms]

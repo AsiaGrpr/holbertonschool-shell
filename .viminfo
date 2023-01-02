@@ -10,11 +10,100 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~Msle0~/\<p\>
+
 # Command Line History (newest to oldest):
+:x
+|2,0,1668436138,,"x"
+:19,30d
+|2,0,1667995066,,"19,30d"
+:22,27d
+|2,0,1667819011,,"22,27d"
+:14,$d
+|2,0,1667480023,,"14,$d"
+:10,$d
+|2,0,1667474256,,"10,$d"
+:22,32d
+|2,0,1667389158,,"22,32d"
+:14,19d
+|2,0,1667304976,,"14,19d"
+:X
+|2,0,1667304012,,"X"
+:16,$d
+|2,0,1667226545,,"16,$d"
+:22,35d
+|2,0,1667223630,,"22,35d"
+:19,32d
+|2,0,1667223540,,"19,32d"
+:15,24d
+|2,0,1667220492,,"15,24d"
+:6d
+|2,0,1667208566,,"6d"
+:14,20d
+|2,0,1667208285,,"14,20d"
+:53,$d
+|2,0,1666866670,,"53,$d"
+:w
+|2,0,1666685801,,"w"
+:c
+|2,0,1666602709,,"c"
+:6,12d
+|2,0,1666601035,,"6,12d"
+:PlugInstall
+|2,0,1666351353,,"PlugInstall"
+:1,$d
+|2,0,1666257427,,"1,$d"
+:1,8d
+|2,0,1666255462,,"1,8d"
+:12,27d
+|2,0,1666187156,,"12,27d"
+:q!
+|2,0,1666175874,,"q!"
+:7,32d
+|2,0,1666175809,,"7,32d"
+:5,32d
+|2,0,1666167671,,"5,32d"
+:6,32d
+|2,0,1665996313,,"6,32d"
+:12,20d
+|2,0,1665949478,,"12,20d"
+:20,26d
+|2,0,1665916939,,"20,26d"
+:29,42d
+|2,0,1665916063,,"29,42d"
+:9,$d
+|2,0,1665735949,,"9,$d"
+:11,$d
+|2,0,1665589740,,"11,$d"
+:20,$d
+|2,0,1665582194,,"20,$d"
+:s
+|2,0,1665578901,,"s"
 :wq
-|2,0,1663753044,,"wq"
+|2,0,1665483452,,"wq"
+:q
+|2,0,1664538613,,"q"
+:q=
+|2,0,1664538596,,"q="
 
 # Search String History (newest to oldest):
+? \<p\>
+|2,1,1667390094,,"\\<p\\>"
+? \<dest\>
+|2,1,1665933632,,"\\<dest\\>"
+? \<accept\>
+|2,1,1665929142,,"\\<accept\\>"
+? \<start\>
+|2,1,1665583487,,"\\<start\\>"
+? \<strings\>
+|2,1,1665577929,,"\\<strings\\>"
+? \<s\>
+|2,1,1665483696,,"\\<s\\>"
+? \<n\>
+|2,1,1665411871,,"\\<n\\>"
+? \<Fvn\>
+|2,1,1664448312,,"\\<Fvn\\>"
 
 # Expression History (newest to oldest):
 
@@ -23,83 +112,2302 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
+""1	LINE	0
+	/**
+	 * _putchar - writes the character c to stdout
+	 * @c: The character to print
+	 *
+	 * Return: On success 1.
+	 * On error, -1 is returned, and errno is set appropriately.
+	 */
+	
+	int _putchar(char c)
+	{
+		return (write(1, &c, 1));
+	}
+|3,1,1,1,12,0,1667995066,"/**"," * _putchar - writes the character c to stdout"," * @c: The character to print"," *"," * Return: On success 1."," * On error, -1 is returned, and errno is set appropriately."," */","","int _putchar(char c)","{","	return (write(1, &c, 1));","}"
+"2	LINE	0
+	/**
+	 * struct pr_arg- Struct pr_arg
+	 *
+	 * @targ: type of character
+	 * @f: function associated
+	 */
+|3,0,2,1,6,0,1667819011,"/**"," * struct pr_arg- Struct pr_arg"," *"," * @targ: type of character"," * @f: function associated"," */"
+"3	LINE	0
+	/* function that print different format */
+|3,0,3,1,1,0,1667818995,"/* function that print different format */"
+"4	LINE	0
+		va_start(to_pr, format);
+|3,0,4,1,1,0,1667818390,"	va_start(to_pr, format);"
+"5	LINE	0
+	void print_all(const char * const format, ...)
+	{
+		va_list parametersInfos;
+		va_start( parametersInfos, format );
+	
+		size_t writtenCharacters = 0;
+		char currentChar;
+	
+		while( (currentChar = *format) != '\0' )
+		{
+			format ++;
+			if ( currentChar != '%' ) {
+				putchar( currentChar );
+				writtenCharacters ++;
+			continue;
+	        }
+	
+	        switch( *format ++ ) {
+	            case 'd':
+	                {
+	                    int integerValue = (int) va_arg( parametersInfos, int );
+	                    writtenCharacters += displayInteger( integerValue );
+	                }
+	                break;
+	            case 'f':
+	                {
+	                    double doubleValue = (double) va_arg( parametersInfos, double );
+	                    int leftPart = (int) doubleValue;
+	                    writtenCharacters += displayInteger( leftPart );
+	                    doubleValue -= leftPart;
+	
+	                    putchar( '.' );
+	                    writtenCharacters ++;
+	
+	                    while( ( doubleValue - (int) doubleValue ) > 10e-6 ) {
+	                        doubleValue *= 10;
+	                    }
+	                    writtenCharacters += displayInteger( (int) doubleValue );
+	                }
+	                break;
+	            case 's':
+	                {
+	                    const char * string = (const char *) va_arg( parametersInfos, const char * );
+	                    while( *string != '\0' ) {
+	                        putchar( *string ++ );
+	                        writtenCharacters ++;
+	                    }
+	                }
+	                break;
+	            default:
+|3,0,5,1,50,0,1667474256,"void print_all(const char * const format, ...)","{","	va_list parametersInfos;","	va_start( parametersInfos, format );","","	size_t writtenCharacters = 0;","	char currentChar;","","	while( (currentChar = *format) != '\\0' )","	{","		format ++;","		if ( currentChar != '%' ) {","			putchar( currentChar );","			writtenCharacters ++;","		continue;","        }","","        switch( *format ++ ) {","            case 'd':",>19
+|<"                {","                    int integerValue = (int) va_arg( parametersInfos, int );","                    writtenCharacters += displayInteger( integerValue );","                }","                break;","            case 'f':","                {","                    double doubleValue = (double) va_arg( parametersInfos, double );","                    int leftPart = (int) doubleValue;","                    writtenCharacters += displayInteger( leftPart );",>46
+|<"                    doubleValue -= leftPart;","","                    putchar( '.' );","                    writtenCharacters ++;","","                    while( ( doubleValue - (int) doubleValue ) > 10e-6 ) {","                        doubleValue *= 10;","                    }","                    writtenCharacters += displayInteger( (int) doubleValue );","                }","                break;","            case 's':","                {",>99
+|<"                    const char * string = (const char *) va_arg( parametersInfos, const char * );","                    while( *string != '\\0' ) {","                        putchar( *string ++ );","                        writtenCharacters ++;","                    }","                }","                break;","            default:"
+"6	LINE	0
+	    /* Release va_list resources */
+|3,0,6,1,1,0,1667473494,"    /* Release va_list resources */"
+"7	LINE	0
+	    /* Initialize the va_list structure */
+|3,0,7,1,1,0,1667473484,"    /* Initialize the va_list structure */"
+"8	LINE	0
+	dog_t *new_dog(char *name, float age, char *owner)
+	{
+		dog_t my_dog
+		{
+			char *name;
+			float age;
+			char *owner;
+		};
+	
+		dog_t *new_dog = &my_dog;
+	
+		int i = strlen(name), j = strlen(owner);
+	
+		new_dog = malloc((sizeof(char) * (i + j)) + sizeof(float) + 1);
+		if (new_dog == NULL)
+			return (NULL);
+	
+		char *a = strncpy(name), *b = strncpy(owner);
+	
+		new_dog->name = malloc(i);
+		new_dog->owner = malloc(j);
+	
+	
+	
+|3,0,8,1,24,0,1667468266,"dog_t *new_dog(char *name, float age, char *owner)","{","	dog_t my_dog","	{","		char *name;","		float age;","		char *owner;","	};","","	dog_t *new_dog = &my_dog;","","	int i = strlen(name), j = strlen(owner);","","	new_dog = malloc((sizeof(char) * (i + j)) + sizeof(float) + 1);","	if (new_dog == NULL)","		return (NULL);","","	char *a = strncpy(name), *b = strncpy(owner);","","	new_dog->name = malloc(i);",>30
+|<"	new_dog->owner = malloc(j);","","",""
+"9	LINE	0
+				p = va_arg(list, char);
+	
+				if (i == (n - 1))
+					printf("%d", p);
+	
+				else if (separator == NULL)
+					printf("%d", p);
+	
+				else if (i != (n - 1))
+					printf("%d%s", p, separator);
+			}
+|3,0,9,1,11,0,1667389158,"			p = va_arg(list, char);","","			if (i == (n - 1))","				printf(\"%d\", p);","","			else if (separator == NULL)","				printf(\"%d\", p);","","			else if (i != (n - 1))","				printf(\"%d%s\", p, separator);","		}"
+"-	CHAR	0
+	 
+|3,0,36,0,1,0,1666685688," "
 
 # File marks:
-'0  3  0  ~/holbertonschool-shell/basics/0-current_working_directory
-|4,48,3,0,1663753044,"~/holbertonschool-shell/basics/0-current_working_directory"
-'1  2  28  /holbertonschool-zero_day/git/bash/best
-|4,49,2,28,1663747393,"/holbertonschool-zero_day/git/bash/best"
-'2  2  24  /holbertonschool-zero_day/git/bash/school
-|4,50,2,24,1663746843,"/holbertonschool-zero_day/git/bash/school"
-'3  2  16  /holbertonschool-zero_day/git/bash/best
-|4,51,2,16,1663746710,"/holbertonschool-zero_day/git/bash/best"
+'0  30  0  ~/holbertonschool-low_level_programming/singly_linked_lists/lists.h
+|4,48,30,0,1668436138,"~/holbertonschool-low_level_programming/singly_linked_lists/lists.h"
+'1  28  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,49,28,0,1668435894,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+'2  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,50,1,0,1668435830,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+'3  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,51,1,0,1668435830,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+'4  20  2  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,52,20,2,1668435731,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+'5  20  2  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,53,20,2,1668435731,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+'6  20  2  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,54,20,2,1668435731,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+'7  20  2  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,55,20,2,1668435731,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+'8  40  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,56,40,0,1668435610,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+'9  28  1  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,57,28,1,1668435576,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
 
 # Jumplist (newest first):
--'  3  0  ~/holbertonschool-shell/basics/0-current_working_directory
-|4,39,3,0,1663753044,"~/holbertonschool-shell/basics/0-current_working_directory"
--'  1  0  ~/holbertonschool-shell/basics/0-current_working_directory
-|4,39,1,0,1663753028,"~/holbertonschool-shell/basics/0-current_working_directory"
--'  2  28  /holbertonschool-zero_day/git/bash/best
-|4,39,2,28,1663747393,"/holbertonschool-zero_day/git/bash/best"
--'  2  28  /holbertonschool-zero_day/git/bash/best
-|4,39,2,28,1663747393,"/holbertonschool-zero_day/git/bash/best"
--'  2  24  /holbertonschool-zero_day/git/bash/school
-|4,39,2,24,1663746843,"/holbertonschool-zero_day/git/bash/school"
--'  2  24  /holbertonschool-zero_day/git/bash/school
-|4,39,2,24,1663746843,"/holbertonschool-zero_day/git/bash/school"
--'  2  24  /holbertonschool-zero_day/git/bash/school
-|4,39,2,24,1663746843,"/holbertonschool-zero_day/git/bash/school"
--'  2  24  /holbertonschool-zero_day/git/bash/school
-|4,39,2,24,1663746843,"/holbertonschool-zero_day/git/bash/school"
--'  1  0  /holbertonschool-zero_day/git/bash/school
-|4,39,1,0,1663746776,"/holbertonschool-zero_day/git/bash/school"
--'  1  0  /holbertonschool-zero_day/git/bash/school
-|4,39,1,0,1663746776,"/holbertonschool-zero_day/git/bash/school"
--'  1  0  /holbertonschool-zero_day/git/bash/school
-|4,39,1,0,1663746776,"/holbertonschool-zero_day/git/bash/school"
--'  1  0  /holbertonschool-zero_day/git/bash/school
-|4,39,1,0,1663746776,"/holbertonschool-zero_day/git/bash/school"
--'  2  16  /holbertonschool-zero_day/git/bash/best
-|4,39,2,16,1663746710,"/holbertonschool-zero_day/git/bash/best"
--'  2  16  /holbertonschool-zero_day/git/bash/best
-|4,39,2,16,1663746710,"/holbertonschool-zero_day/git/bash/best"
--'  2  16  /holbertonschool-zero_day/git/bash/best
-|4,39,2,16,1663746710,"/holbertonschool-zero_day/git/bash/best"
--'  2  16  /holbertonschool-zero_day/git/bash/best
-|4,39,2,16,1663746710,"/holbertonschool-zero_day/git/bash/best"
--'  1  0  /holbertonschool-zero_day/git/bash/best
-|4,39,1,0,1663746674,"/holbertonschool-zero_day/git/bash/best"
--'  1  0  /holbertonschool-zero_day/git/bash/best
-|4,39,1,0,1663746674,"/holbertonschool-zero_day/git/bash/best"
--'  1  0  /holbertonschool-zero_day/git/bash/best
-|4,39,1,0,1663746674,"/holbertonschool-zero_day/git/bash/best"
--'  1  0  /holbertonschool-zero_day/git/bash/best
-|4,39,1,0,1663746674,"/holbertonschool-zero_day/git/bash/best"
--'  1  0  /holbertonschool-zero_day/git/bash/best
-|4,39,1,0,1663746674,"/holbertonschool-zero_day/git/bash/best"
--'  1  0  /holbertonschool-zero_day/git/bash/best
-|4,39,1,0,1663746674,"/holbertonschool-zero_day/git/bash/best"
+-'  30  0  ~/holbertonschool-low_level_programming/singly_linked_lists/lists.h
+|4,39,30,0,1668436138,"~/holbertonschool-low_level_programming/singly_linked_lists/lists.h"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/lists.h
+|4,39,1,0,1668436084,"~/holbertonschool-low_level_programming/singly_linked_lists/lists.h"
+-'  28  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,28,0,1668435894,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  28  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,28,0,1668435894,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,1,0,1668435840,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,1,0,1668435840,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,1,0,1668435830,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,1,0,1668435830,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  20  2  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,20,2,1668435731,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  20  2  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,20,2,1668435731,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  20  2  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,20,2,1668435731,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  20  2  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,20,2,1668435731,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  20  2  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,20,2,1668435731,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  20  2  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,20,2,1668435731,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,1,0,1668435686,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,1,0,1668435686,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  40  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,40,0,1668435610,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  40  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,40,0,1668435610,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  40  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,40,0,1668435610,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  40  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,40,0,1668435610,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  40  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,40,0,1668435610,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  40  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,40,0,1668435610,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  40  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,40,0,1668435610,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  40  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,40,0,1668435610,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  40  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,40,0,1668435610,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  40  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,40,0,1668435610,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  40  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,40,0,1668435610,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  40  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,40,0,1668435610,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  40  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,40,0,1668435610,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  40  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,40,0,1668435610,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  40  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,40,0,1668435610,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  40  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,40,0,1668435610,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,1,0,1668435598,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,1,0,1668435598,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,1,0,1668435598,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,1,0,1668435598,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,1,0,1668435598,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,1,0,1668435598,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,1,0,1668435598,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,1,0,1668435598,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,1,0,1668435598,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,1,0,1668435598,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,1,0,1668435598,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,1,0,1668435598,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,1,0,1668435598,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,1,0,1668435598,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,1,0,1668435598,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+|4,39,1,0,1668435598,"~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c"
+-'  29  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,29,0,1668435576,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  29  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,29,0,1668435576,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  29  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,29,0,1668435576,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  29  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,29,0,1668435576,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  29  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,29,0,1668435576,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  29  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,29,0,1668435576,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  29  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,29,0,1668435576,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  29  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,29,0,1668435576,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,1,0,1668435565,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,1,0,1668435565,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,1,0,1668435565,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,1,0,1668435565,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,1,0,1668435549,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,1,0,1668435549,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,1,0,1668435549,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  1  0  ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+|4,39,1,0,1668435549,"~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
+-'  53  0  ~/holbertonschool-printf/_printf.c
+|4,39,53,0,1668075710,"~/holbertonschool-printf/_printf.c"
 
 # History of marks within files (newest to oldest):
 
-> ~/holbertonschool-shell/basics/0-current_working_directory
-	*	1663753041	0
+> ~/holbertonschool-low_level_programming/singly_linked_lists/lists.h
+	*	1668436137	0
+	"	30	0
+	^	30	0
+	.	29	6
+	+	17	7
+	+	18	7
+	+	19	7
+	+	29	6
+
+> ~/holbertonschool-low_level_programming/singly_linked_lists/0-print_list.c
+	*	1668435893	0
+	"	28	0
+	^	28	1
+	.	29	0
+	+	28	1
+	+	16	2
+	+	13	0
+	+	18	3
+	+	18	28
+	+	17	0
+	+	17	21
+	+	19	0
+	+	29	0
+
+> ~/holbertonschool-low_level_programming/singly_linked_lists/0-main.c
+	*	1668435609	0
+	"	40	0
+	^	40	1
+	.	40	0
+	+	40	0
+
+> ~/holbertonschool-printf/_printf.c
+	*	1668075709	0
+	"	53	0
+	^	53	0
+	.	53	0
+	+	66	4
+	+	67	0
+	+	66	0
+	+	76	0
+	+	65	0
+	+	66	0
+	+	14	22
+	+	15	0
+	+	53	0
+
+> ~/holbertonschool-printf/fonctions.c
+	*	1668074461	0
+	"	1	0
+	^	55	0
+	.	55	0
+	+	7	2
+	+	11	1
+	+	13	0
+	+	15	0
+	+	16	0
+	+	22	2
+	+	27	0
+	+	29	17
+	+	31	0
+	+	27	0
+	+	17	0
+	+	37	2
+	+	31	11
+	+	41	0
+	+	41	31
+	+	41	26
+	+	52	2
+	+	63	2
+	+	41	25
+	+	46	20
+	+	7	2
+	+	12	0
+	+	14	0
+	+	15	8
+	+	16	7
+	+	22	2
+	+	27	7
+	+	29	0
+	+	30	0
+	+	36	2
+	+	41	0
+	+	44	0
+	+	50	2
+	+	61	2
+	+	18	0
+	+	19	0
+	+	43	0
+	+	52	2
+	+	58	1
+	+	57	0
+	+	58	8
+	+	59	7
+	+	41	0
+	+	42	0
+	+	49	2
+	+	55	0
+
+> ~/holbertonschool-printf/test-document.c
+	*	1667891283	0
+	"	1	21
+	^	1	22
+	.	1	21
+	+	1	21
+
+> ~/holbertonschool-zero_day/.git/COMMIT_EDITMSG
+	*	1667890782	0
+	"	10	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> ~/holbertonschool-zero_day/test.c
+	*	1667890681	0
+	"	1	46
+	^	1	47
+	.	1	46
+	+	1	46
+
+> ~/holbertonschool-low_level_programming/variadic_functions/variadic_functions.h
+	*	1667826666	0
+	"	20	16
+	^	20	17
+	.	20	16
+	+	1	27
+	+	15	47
+	+	4	19
+	+	10	20
+	+	29	5
+	+	5	19
+	+	7	18
+	+	8	18
+	+	13	68
+	+	27	9
+	+	17	0
+	+	22	0
+	+	23	19
+	+	27	6
+	+	17	24
+	+	18	23
+	+	19	15
+	+	20	16
+
+> ~/holbertonschool-low_level_programming/variadic_functions/3-print_all.c
+	*	1667818827	0
+	"	68	12
+	^	68	13
+	.	68	12
+	+	55	52
+	+	59	1
+	+	59	25
+	+	59	0
+	+	59	7
+	+	59	8
+	+	59	41
+	+	59	15
+	+	59	9
+	+	59	0
+	+	98	0
+	+	60	10
+	+	62	8
+	+	65	10
+	+	78	23
+	+	81	23
+	+	84	23
+	+	87	16
+	+	88	9
+	+	97	22
+	+	93	17
+	+	87	4
+	+	61	25
+	+	69	0
+	+	61	26
+	+	78	34
+	+	81	34
+	+	61	32
+	+	78	40
+	+	81	40
+	+	61	22
+	+	68	7
+	+	60	1
+	+	3	3
+	+	11	32
+	+	33	7
+	+	22	10
+	+	37	45
+	+	15	37
+	+	50	25
+	+	50	0
+	+	44	12
+	+	46	17
+	+	47	10
+	+	48	7
+	+	51	0
+	+	50	5
+	+	55	15
+	+	70	2
+	+	64	11
+	+	73	0
+	+	95	0
+	+	76	0
+	+	62	7
+	+	81	21
+	+	83	19
+	+	84	20
+	+	85	6
+	+	93	15
+	+	65	14
+	+	66	13
+	+	67	15
+	+	68	16
+	+	65	12
+	+	66	12
+	+	67	12
+	+	68	12
+
+> ~/holbertonschool-low_level_programming/function_pointers/3-calc.h
+	*	1667559310	0
+	"	25	8
+	^	25	9
+	.	25	9
+	+	27	5
+	+	2	13
+	+	1	13
+	+	9	25
+	+	12	38
+	+	3	19
+	+	5	18
+	+	25	0
+	+	15	0
+	+	15	10
+	+	25	9
+
+> ~/holbertonschool-low_level_programming/function_pointers/3-main.c
+	*	1667558997	0
+	"	1	0
+	^	6	27
+	.	6	26
+	+	4	70
+	+	42	0
+	+	6	1
+	+	6	0
+	+	5	2
+	+	7	1
+	+	6	26
+
+> ~/holbertonschool-low_level_programming/function_pointers/3-get_op_func.c
+	*	1667556745	0
+	"	30	0
+	^	30	1
+	.	30	0
+	+	1	18
+	+	3	3
+	+	4	3
+	+	1	18
+	+	4	59
+	+	5	45
+	+	30	0
+
+> ~/holbertonschool-low_level_programming/function_pointers/3-op_functions.c
+	*	1667555424	0
+	"	62	0
+	^	62	0
+	.	61	1
+	+	14	0
+	+	21	2
+	+	8	16
+	+	17	10
+	+	18	10
+	+	21	3
+	+	16	44
+	+	26	0
+	+	33	2
+	+	28	38
+	+	29	0
+	+	28	30
+	+	45	2
+	+	40	34
+	+	41	20
+	+	48	14
+	+	36	15
+	+	57	2
+	+	52	37
+	+	61	1
+
+> ~/holbertonschool-low_level_programming/function_pointers/calc.h
+	*	1667552324	0
+	"	22	2
+	^	22	3
+	.	22	2
+	+	24	5
+	+	22	2
+
+> ~/holbertonschool-low_level_programming/structures_typedef/4-new_dog.c
+	*	1667480072	0
+	"	24	1
+	^	24	2
+	.	25	0
+	+	13	2
+	+	7	3
+	+	8	22
+	+	10	26
+	+	8	1
+	+	11	1
+	+	7	32
+	+	14	26
+	+	14	6
+	+	14	4
+	+	14	2
+	+	14	10
+	+	14	9
+	+	14	19
+	+	14	7
+	+	14	0
+	+	14	8
+	+	14	19
+	+	14	0
+	+	14	15
+	+	14	1
+	+	14	5
+	+	14	7
+	+	14	12
+	+	14	11
+	+	14	8
+	+	14	1
+	+	14	0
+	+	14	9
+	+	14	10
+	+	14	0
+	+	14	75
+	+	4	19
+	+	14	0
+	+	14	24
+	+	14	49
+	+	14	14
+	+	14	35
+	+	14	49
+	+	14	0
+	+	14	7
+	+	14	8
+	+	14	0
+	+	14	27
+	+	14	33
+	+	14	16
+	+	14	38
+	+	14	39
+	+	14	16
+	+	14	18
+	+	14	0
+	+	14	27
+	+	14	0
+	+	56	0
+	+	16	0
+	+	56	0
+	+	16	11
+	+	19	4
+	+	20	8
+	+	28	4
+	+	30	10
+	+	34	0
+	+	36	0
+	+	34	0
+	+	39	5
+	+	41	4
+	+	42	4
+	+	44	10
+	+	45	12
+	+	45	20
+	+	49	0
+	+	53	5
+	+	55	12
+	+	22	11
+	+	24	0
+	+	32	19
+	+	35	0
+	+	47	20
+	+	31	2
+	+	32	20
+	+	33	11
+	+	48	11
+	+	32	11
+	+	47	11
+	+	46	15
+	+	25	0
+
+> ~/holbertonschool-low_level_programming/variadic_functions/3-main.c
+	*	1667474476	0
+	"	12	0
+	^	12	1
+	.	12	0
+	+	12	0
+
+> ~/holbertonschool-low_level_programming/structures_typedef/5-free_dog.c
+	*	1667469891	0
+	"	20	0
+	^	20	1
+	.	20	0
+	+	20	0
+
+> ~/holbertonschool-low_level_programming/structures_typedef/dog.h
+	*	1667468698	0
+	"	1	0
+	^	23	0
+	.	22	24
+	+	24	5
+	+	13	69
+	+	2	8
+	+	1	18
+	+	3	0
+	+	2	17
+	+	1	12
+	+	2	12
+	+	13	37
+	+	13	20
+	+	13	21
+	+	13	16
+	+	13	17
+	+	13	65
+	+	18	0
+	+	14	12
+	+	16	13
+	+	1	11
+	+	2	11
+	+	16	14
+	+	13	88
+	+	13	86
+	+	14	8
+	+	15	8
+	+	16	8
+	+	16	21
+	+	1	12
+	+	2	12
+	+	13	80
+	+	13	78
+	+	13	79
+	+	13	69
+	+	13	76
+	+	17	0
+	+	13	88
+	+	14	1
+	+	15	1
+	+	16	1
+	+	13	79
+	+	13	93
+	+	13	80
+	+	13	94
+	+	13	77
+	+	13	94
+	+	13	16
+	+	13	75
+	+	13	6
+	+	17	1
+	+	13	12
+	+	13	0
+	+	3	0
+	+	11	2
+	+	12	24
+	+	13	0
+	+	12	25
+	+	13	0
+	+	6	0
+	+	5	9
+	+	12	25
+	+	14	0
+	+	17	1
+	+	12	15
+	+	5	9
+	+	17	1
+	+	5	10
+	+	12	15
+	+	17	1
+	+	12	0
+	+	17	1
+	+	19	65
+	+	20	54
+	+	20	30
+	+	20	32
+	+	20	30
+	+	12	11
+	+	5	13
+	+	12	10
+	+	18	1
+	+	18	14
+	+	18	0
+	+	21	3
+	+	21	1
+	+	21	14
+	+	21	0
+	+	12	0
+	+	17	6
+	+	12	7
+	+	21	51
+	+	22	24
+
+> ~/holbertonschool-low_level_programming/structures_typedef/4-main.c
+	*	1667468502	0
+	"	1	0
+	^	16	1
+	.	16	0
+	+	16	0
+
+> ~/holbertonschool-low_level_programming/variadic_functions/3-print_all.
+	*	1667396188	0
+	"	1	0
+
+> ~/holbertonschool-low_level_programming/variadic_functions/2-print_strings.c
+	*	1667396104	0
+	"	28	6
+	^	28	7
+	.	28	7
+	+	39	0
+	+	7	25
+	+	6	53
+	+	34	24
+	+	15	4
+	+	34	0
+	+	33	2
+	+	23	27
+	+	24	0
+	+	25	0
+	+	26	10
+	+	27	9
+	+	29	10
+	+	30	9
+	+	32	10
+	+	33	8
+	+	27	3
+	+	30	3
+	+	15	6
+	+	25	12
+	+	26	18
+	+	27	0
+	+	30	0
+	+	25	10
+	+	28	10
+	+	3	0
+	+	28	17
+	+	28	36
+	+	29	17
+	+	28	17
+	+	29	20
+	+	29	19
+	+	29	0
+	+	28	6
+	+	25	7
+	+	28	7
+
+> ~/holbertonschool-low_level_programming/variadic_functions/2-main.c
+	*	1667389424	0
+	"	12	0
+	^	12	1
+	.	12	0
+	+	12	0
+
+> ~/holbertonschool-low_level_programming/variadic_functions/1-print_numbers.c
+	*	1667388216	0
+	"	28	13
+	^	28	14
+	.	28	14
+	+	5	53
+	+	11	31
+	+	11	72
+	+	11	21
+	+	34	22
+	+	11	1
+	+	12	14
+	+	13	16
+	+	14	7
+	+	14	28
+	+	14	29
+	+	14	32
+	+	14	28
+	+	14	42
+	+	19	4
+	+	20	27
+	+	21	5
+	+	23	0
+	+	23	11
+	+	24	22
+	+	26	0
+	+	27	27
+	+	29	0
+	+	30	22
+	+	31	35
+	+	32	5
+	+	33	17
+	+	34	17
+	+	34	24
+	+	34	19
+	+	14	28
+	+	14	7
+	+	14	28
+	+	14	42
+	+	20	0
+	+	20	27
+	+	22	0
+	+	24	0
+	+	25	0
+	+	26	0
+	+	27	0
+	+	28	0
+	+	29	0
+	+	30	0
+	+	31	0
+	+	31	35
+	+	32	0
+	+	32	5
+	+	33	17
+	+	34	15
+	+	38	0
+	+	17	3
+	+	12	0
+	+	12	14
+	+	13	16
+	+	15	1
+	+	18	0
+	+	19	1
+	+	20	8
+	+	21	8
+	+	22	9
+	+	23	0
+	+	24	9
+	+	25	10
+	+	27	9
+	+	28	10
+	+	30	9
+	+	31	10
+	+	32	8
+	+	33	8
+	+	34	8
+	+	35	0
+	+	28	14
+	+	37	14
+	+	27	7
+	+	30	9
+	+	28	14
+
+> ~/holbertonschool-low_level_programming/variadic_functions/1-main.c
+	*	1667387599	0
+	"	12	0
+	^	12	1
+	.	12	0
+	+	12	0
+
+> ~/holbertonschool-low_level_programming/variadic_functions/0-sum_them_all.c
+	*	1667380450	0
+	"	12	11
+	^	12	12
+	.	12	11
+	+	4	69
+	+	24	12
+	+	12	7
+	+	27	0
+	+	12	9
+	+	13	15
+	+	12	11
+
+> ~/holbertonschool-low_level_programming/variadic_functions/0-main.c
+	*	1667380267	0
+	"	18	0
+	^	18	1
+	.	18	0
+	+	18	0
+
+> ~/holbertonschool-low_level_programming/variadic_functions/_putchar.c
+	*	1667378286	0
+	"	2	30
+	^	2	31
+	.	2	30
+	+	14	0
+	+	2	30
+
+> ~/holbertonschool-low_level_programming/function_pointers/2-int_index.c
+	*	1667307641	0
+	"	22	20
+	^	22	21
+	.	22	21
+	+	15	49
+	+	15	26
+	+	22	45
+	+	22	35
+	+	27	17
+	+	15	15
+	+	18	18
+	+	27	16
+	+	22	40
+	+	22	60
+	+	13	16
+	+	22	60
+	+	22	38
+	+	15	1
+	+	13	10
+	+	15	16
+	+	18	18
+	+	16	14
+	+	18	12
+	+	17	0
+	+	18	18
+	+	20	0
+	+	21	2
+	+	22	8
+	+	22	34
+	+	20	21
+	+	22	25
+	+	22	4
+	+	22	5
+	+	22	23
+	+	22	40
+	+	22	25
+	+	22	36
+	+	22	7
+	+	24	0
+	+	23	10
+	+	26	2
+	+	25	0
+	+	26	1
+	+	27	0
+	+	13	6
+	+	20	11
+	+	22	21
+
+> ~/holbertonschool-low_level_programming/function_pointers/2-main.c
+	*	1667306464	0
+	"	55	0
+	^	55	1
+	.	55	0
+	+	55	0
+
+> ~/holbertonschool-low_level_programming/function_pointers/1-array_iterator.c
+	*	1667305935	0
+	"	26	1
+	^	26	2
+	.	26	0
+	+	4	64
+	+	5	39
+	+	12	65
+	+	6	23
+	+	12	65
+	+	24	0
+	+	14	6
+	+	27	0
+	+	19	0
+	+	20	9
+	+	21	9
+	+	22	10
+	+	23	10
+	+	24	9
+	+	25	3
+	+	26	0
+
+> ~/holbertonschool-low_level_programming/function_pointers/1-main.c
+	*	1667305808	0
+	"	38	0
+	^	38	1
+	.	38	0
+	+	38	0
+
+> ~/holbertonschool-low_level_programming/function_pointers/0-print_name.c
+	*	1667305177	0
+	"	12	5
+	^	12	6
+	.	12	5
+	+	8	21
+	+	16	0
+	+	16	9
+	+	16	12
+	+	16	0
+	+	14	6
+	+	13	0
+	+	14	13
+	+	15	0
+	+	12	5
+
+> ~/holbertonschool-low_level_programming/function_pointers/0-main.c
+	*	1667304827	0
+	"	52	0
+	^	52	1
+	.	52	0
+	+	52	0
+
+> ~/holbertonschool-low_level_programming/function_pointers/_putchar.c
+	*	1667304164	0
+	"	2	29
+	^	2	30
+	.	2	29
+	+	14	0
+	+	2	29
+
+> ~/holbertonschool-low_level_programming/function_pointers/function_pointers.h
+	*	1667304017	0
+	"	11	0
+	^	11	0
+	.	10	38
+	+	13	12
+	+	1	26
+	+	2	26
+	+	14	0
+	+	4	19
+	+	10	38
+
+> ~/holbertonschool-low_level_programming/structures_typedef/3-main.c
+	*	1667223345	0
+	"	18	0
+	^	18	1
+	.	18	0
+	+	18	0
+
+> ~/holbertonschool-low_level_programming/structures_typedef/2-print_dog.c
+	*	1667221569	0
+	"	18	24
+	^	18	25
+	.	18	24
+	+	10	2
+	+	7	0
+	+	6	47
+	+	8	0
+	+	20	0
+	+	19	39
+	+	19	25
+	+	19	24
+	+	19	26
+	+	19	28
+	+	19	26
+	+	19	30
+	+	13	74
+	+	19	0
+	+	13	51
+	+	19	0
+	+	19	8
+	+	19	34
+	+	19	0
+	+	13	28
+	+	13	15
+	+	13	7
+	+	19	0
+	+	19	9
+	+	19	8
+	+	19	9
+	+	19	3
+	+	19	0
+	+	19	28
+	+	19	0
+	+	19	58
+	+	15	76
+	+	16	75
+	+	17	10
+	+	19	0
+	+	17	8
+	+	16	34
+	+	18	0
+	+	16	72
+	+	15	74
+	+	18	24
+
+> ~/holbertonschool-low_level_programming/structures_typedef/2-main.c
+	*	1667214202	0
+	"	18	0
+	^	18	1
+	.	18	0
+	+	18	0
+
+> ~/holbertonschool-low_level_programming/structures_typedef/1-init_dog.c
+	*	1667213554	0
+	"	21	1
+	^	21	2
+	.	21	0
+	+	8	23
+	+	8	19
+	+	8	21
+	+	8	3
+	+	15	1
+	+	22	12
+	+	15	2
+	+	15	11
+	+	15	2
+	+	15	5
+	+	15	2
+	+	15	11
+	+	15	47
+	+	22	11
+	+	18	4
+	+	19	5
+	+	20	5
+	+	19	2
+	+	20	2
+	+	2	18
+	+	23	0
+	+	15	1
+	+	15	32
+	+	14	3
+	+	15	32
+	+	15	16
+	+	15	31
+	+	3	17
+	+	15	6
+	+	17	0
+	+	18	8
+	+	19	8
+	+	20	19
+	+	21	0
+
+> ~/holbertonschool-low_level_programming/structures_typedef/1-main.c
+	*	1667210709	0
+	"	16	0
+	^	16	1
+	.	16	0
+	+	16	0
+
+> ~/holbertonschool-low_level_programming/structures_typedef/0-main.c
+	*	1667207781	0
+	"	18	0
+	^	18	1
+	.	19	0
+	+	19	0
+
+> ~/holbertonschool-low_level_programming/more_malloc_free/3-array_range.c
+	*	1666991656	0
+	"	27	1
+	^	27	2
+	.	26	6
+	+	5	1
+	+	4	59
+	+	6	0
+	+	5	2
+	+	18	0
+	+	14	0
+	+	19	0
+	+	18	45
+	+	30	0
+	+	1	15
+	+	29	0
+	+	18	41
+	+	23	27
+	+	12	20
+	+	28	1
+	+	26	6
+
+> ~/holbertonschool-low_level_programming/more_malloc_free/3-main.c
+	*	1666990676	0
+	"	47	0
+	^	47	1
+	.	47	0
+	+	47	0
+
+> ~/holbertonschool-low_level_programming/more_malloc_free/2-calloc.c
+	*	1666868149	0
+	"	28	29
+	^	28	30
+	.	28	29
+	+	34	0
+	+	4	53
+	+	5	27
+	+	7	1
+	+	18	16
+	+	19	0
+	+	22	1
+	+	25	0
+	+	28	1
+	+	25	1
+	+	26	1
+	+	30	0
+	+	29	0
+	+	32	0
+	+	31	1
+	+	32	1
+	+	27	0
+	+	30	5
+	+	22	0
+	+	28	29
+
+> ~/holbertonschool-low_level_programming/more_malloc_free/2-main.c
+	*	1666867973	0
+	"	50	0
+	^	50	1
+	.	50	0
+	+	50	0
+
+> ~/holbertonschool-low_level_programming/more_malloc_free/1-string_nconcat.c
+	*	1666866959	0
+	"	16	9
+	^	16	10
+	.	16	9
+	+	5	58
+	+	13	1
+	+	2	19
+	+	55	1
+	+	31	36
+	+	35	0
+	+	36	14
+	+	39	11
+	+	41	8
+	+	42	8
+	+	43	9
+	+	44	9
+	+	45	8
+	+	46	8
+	+	47	8
+	+	48	9
+	+	49	9
+	+	50	9
+	+	51	8
+	+	52	8
+	+	53	13
+	+	55	1
+	+	36	0
+	+	55	0
+	+	55	8
+	+	55	9
+	+	55	8
+	+	55	9
+	+	55	8
+	+	55	13
+	+	55	0
+	+	41	1
+	+	42	1
+	+	43	1
+	+	44	1
+	+	45	1
+	+	46	1
+	+	47	1
+	+	48	1
+	+	49	1
+	+	50	1
+	+	51	1
+	+	52	1
+	+	53	1
+	+	54	1
+	+	55	0
+	+	36	14
+	+	39	12
+	+	39	11
+	+	40	0
+	+	14	9
+	+	15	9
+	+	16	9
+
+> ~/holbertonschool-low_level_programming/more_malloc_free/1-main.c
+	*	1666866869	0
+	"	18	0
+	^	18	1
+	.	18	0
+	+	18	0
+
+> ~/holbertonschool-low_level_programming/more_malloc_free/0-malloc_checked.c
+	*	1666865596	0
+	"	2	0
+	^	2	0
+	.	2	0
+	+	4	63
+	+	8	3
+	+	22	0
+	+	14	0
+	+	2	17
+	+	2	0
+
+> ~/holbertonschool-low_level_programming/more_malloc_free/0-main.c
+	*	1666864734	0
+	"	31	0
+	^	31	1
+	.	31	0
+	+	31	0
+
+> ~/holbertonschool-low_level_programming/preprocessor/4-sum.h
+	*	1666863821	0
+	"	5	0
+	^	5	0
+	.	4	28
+	+	7	0
+	+	4	16
+	+	2	10
+	+	1	10
+	+	4	28
+
+> ~/holbertonschool-low_level_programming/preprocessor/3-function_like_macro.h
+	*	1666863629	0
 	"	3	0
 	^	3	0
-	.	2	3
+	.	2	13
+	+	6	5
+	+	1	13
+	+	4	38
+	+	1	11
+	+	2	12
+	+	1	12
+	+	2	13
+
+> ~/holbertonschool-low_level_programming/preprocessor/2-main.c
+	*	1666862753	0
+	"	8	12
+	^	8	13
+	.	8	12
+	+	10	15
+	+	1	18
+	+	10	29
+	+	12	0
+	+	8	13
+	+	5	20
+	+	5	6
+	+	8	2
+	+	10	31
+	+	11	11
+	+	5	0
+	+	8	9
+	+	5	13
+	+	8	12
+
+> ~/holbertonschool-low_level_programming/preprocessor/1-pi.h
+	*	1666861832	0
+	"	2	23
+	^	2	24
+	.	2	23
+	+	4	5
+	+	1	9
+	+	2	23
+
+> ~/holbertonschool-low_level_programming/preprocessor/0-object_like_macro.h
+	*	1666861324	0
+	"	1	11
+	^	1	12
+	.	1	11
+	+	4	5
+	+	1	11
+
+> ~/holbertonschool-low_level_programming/more_malloc_free/main.h
+	*	1666773412	0
+	"	11	5
+	^	11	6
+	.	11	5
+	+	11	5
+
+> ~/holbertonschool-low_level_programming/more_malloc_free/_putchar.c
+	*	1666771053	0
+	"	13	0
+	^	13	1
+	.	13	0
+	+	13	0
+
+> ~/holbertonschool-low_level_programming/malloc_free/4-free_grid.c
+	*	1666770301	0
+	"	18	12
+	^	18	13
+	.	19	0
+	+	19	0
+	+	18	15
+	+	18	2
+	+	17	1
+	+	13	0
+	+	16	10
+	+	18	10
+	+	19	0
+
+> ~/holbertonschool-low_level_programming/malloc_free/4-main.c
+	*	1666770258	0
+	"	53	0
+	^	53	1
+	.	53	0
+	+	53	0
+
+> ~/holbertonschool-low_level_programming/malloc_free/3-alloc_grid.c
+	*	1666703397	0
+	"	45	8
+	^	45	9
+	.	45	8
+	+	49	0
+	+	6	27
+	+	4	83
+	+	8	2
+	+	4	3
+	+	6	3
+	+	7	3
+	+	9	3
+	+	14	11
+	+	20	36
+	+	21	0
+	+	27	34
+	+	43	7
+	+	28	0
+	+	5	7
+	+	9	38
+	+	4	48
+	+	45	8
+
+> ~/holbertonschool-low_level_programming/malloc_free/3-main.c
+	*	1666703351	0
+	"	52	0
+	^	52	1
+	.	52	0
+	+	52	0
+
+> ~/holbertonschool-low_level_programming/malloc_free/2-str_concat.c
+	*	1666703247	0
+	"	46	4
+	^	46	5
+	.	46	4
+	+	6	54
+	+	25	18
+	+	14	19
+	+	25	18
+	+	17	8
+	+	25	18
+	+	29	51
+	+	29	19
+	+	35	46
+	+	29	81
+	+	32	35
+	+	35	46
+	+	32	17
+	+	35	46
+	+	27	0
+	+	25	0
+	+	35	46
+	+	30	48
+	+	35	46
+	+	35	29
+	+	35	27
+	+	35	56
+	+	14	15
+	+	48	1
+	+	35	47
+	+	29	19
+	+	31	3
+	+	32	1
+	+	33	2
+	+	35	87
+	+	48	0
+	+	30	46
+	+	14	20
+	+	35	33
+	+	35	151
+	+	30	42
+	+	35	152
+	+	35	117
+	+	35	152
+	+	35	156
+	+	14	18
+	+	49	0
+	+	35	104
+	+	35	34
+	+	35	104
+	+	30	42
+	+	35	32
+	+	35	101
+	+	35	45
+	+	35	67
+	+	35	97
+	+	35	102
+	+	35	75
+	+	35	16
+	+	35	56
+	+	24	17
+	+	27	0
+	+	35	18
+	+	22	10
+	+	19	0
+	+	35	8
+	+	45	1
+	+	15	6
+	+	14	15
+	+	15	11
+	+	16	10
+	+	35	15
+	+	37	12
+	+	38	2
+	+	40	15
+	+	42	12
+	+	43	2
+	+	44	2
+	+	46	4
+
+> ~/holbertonschool-low_level_programming/malloc_free/2-main.c
+	*	1666697408	0
+	"	23	0
+	^	23	1
+	.	23	0
+	+	23	0
+
+> ~/holbertonschool-low_level_programming/malloc_free/1-strdup.c
+	*	1666686237	0
+	"	22	0
+	^	22	0
+	.	17	45
+	+	6	79
+	+	12	1
+	+	20	35
+	+	14	19
+	+	20	2
+	+	15	9
+	+	32	16
+	+	31	0
+	+	36	0
+	+	14	4
+	+	15	15
+	+	20	36
+	+	15	16
+	+	35	11
+	+	35	0
+	+	34	12
+	+	35	9
+	+	15	8
+	+	20	2
+	+	32	2
+	+	34	1
+	+	20	2
+	+	32	2
+	+	34	1
+	+	14	16
+	+	3	18
+	+	35	9
+	+	25	7
+	+	20	1
+	+	20	2
+	+	25	29
+	+	20	12
+	+	19	14
+	+	19	16
+	+	19	18
+	+	18	7
+	+	19	13
+	+	20	0
+	+	19	14
+	+	20	0
+	+	24	0
+	+	19	14
+	+	21	0
+	+	23	38
+	+	22	0
+	+	21	0
+	+	19	14
+	+	24	0
+	+	14	8
+	+	21	7
+	+	22	0
+	+	25	5
+	+	30	10
+	+	17	44
+	+	24	42
+	+	17	45
+
+> ~/holbertonschool-low_level_programming/malloc_free/1-main.c
+	*	1666683496	0
+	"	23	0
+	^	23	1
+	.	23	0
+	+	23	0
+
+> ~/holbertonschool-low_level_programming/malloc_free/0-create_array.c
+	*	1666617709	0
+	"	15	26
+	^	15	27
+	.	15	26
+	+	24	42
+	+	12	7
+	+	12	35
+	+	21	1
+	+	24	0
+	+	24	2
+	+	12	31
+	+	17	15
+	+	19	16
+	+	20	0
+	+	12	6
+	+	24	2
+	+	17	27
+	+	23	0
+	+	24	2
+	+	24	17
+	+	22	20
+	+	24	15
+	+	28	0
+	+	6	11
+	+	12	7
+	+	16	0
+	+	17	7
+	+	24	11
+	+	12	7
+	+	12	17
+	+	4	2
+	+	3	2
+	+	12	7
+	+	15	24
+	+	17	5
+	+	27	0
+	+	15	37
+	+	26	11
+	+	14	0
+	+	12	9
+	+	26	9
+	+	15	32
+	+	25	0
+	+	15	26
+
+> ~/holbertonschool-low_level_programming/malloc_free/0-main.c
+	*	1666602718	0
+	"	50	4
+	.	51	0
+	+	51	0
+
+> ~/holbertonschool-low_level_programming/malloc_free/_putchar.c
+	*	1666601181	0
+	"	13	0
+	^	13	1
+	.	13	0
+	+	13	0
+
+> ~/holbertonschool-low_level_programming/malloc_free/main.h
+	*	1666601141	0
+	"	10	0
+	^	10	0
+	.	9	40
+	+	6	5
+	+	6	0
+	+	11	0
+	+	9	40
+
+> ~/holbertonschool-low_level_programming/makefiles/3-Makefile
+	*	1666356390	0
+	"	1	0
+	^	1	0
+
+> ~/holbertonschool-low_level_programming/makefiles/2-Makefile
+	*	1666353579	0
+	"	6	10
+	^	6	11
+	.	6	10
+	+	8	49
+	+	2	20
+	+	8	26
+	+	2	17
+	+	3	62
+	+	3	17
+	+	8	25
+	+	3	33
+	+	8	26
+	+	3	13
+	+	4	21
+	+	7	0
+	+	8	1
+	+	6	10
+
+> ~/.vimrc
+	*	1666351322	0
+	"	16	54
+	^	16	55
+	.	16	54
+	+	9	33
+	+	10	20
+	+	8	26
+	+	9	56
+	+	9	43
+	+	8	14
+	+	9	3
+	+	8	12
+	+	9	16
+	+	8	12
+	+	9	16
+	+	10	0
+	+	9	0
+	+	10	0
+	+	4	0
+	+	8	12
+	+	9	16
+	+	10	18
+	+	16	54
+
+> ~/holbertonschool-low_level_programming/makefiles/1-Makefile
+	*	1666338903	0
+	"	2	3
+	^	2	4
+	.	2	4
+	+	5	29
+	+	1	19
+	+	5	3
+	+	3	0
+	+	1	9
+	+	2	21
+	+	5	13
+	+	4	7
+	+	2	21
+	+	4	5
+	+	1	0
+	+	4	19
+	+	1	3
+	+	4	5
+	+	2	4
+
+> ~/holbertonschool-low_level_programming/makefiles/0-Makefile
+	*	1666337678	0
+	"	1	2
+	^	1	3
+	.	1	2
+	+	1	29
+	+	1	44
+	+	1	15
+	+	2	29
+	+	1	22
+	+	2	1
+	+	1	2
+
+> ~/holbertonschool-low_level_programming/argc_argv/4-add.c
+	*	1666273466	0
+	"	29	26
+	^	29	27
+	.	29	27
+	+	14	0
+	+	6	20
+	+	16	64
+	+	30	27
+	+	22	20
+	+	30	29
+	+	16	75
+	+	35	0
+	+	3	17
+	+	30	9
+	+	16	103
+	+	22	21
+	+	30	24
+	+	16	75
+	+	16	87
+	+	16	10
+	+	26	5
+	+	16	21
+	+	15	0
+	+	16	8
+	+	21	0
+	+	22	10
+	+	23	10
+	+	24	11
+	+	25	11
+	+	26	10
+	+	26	15
+	+	30	13
+	+	32	13
+	+	32	34
+	+	32	36
+	+	32	35
+	+	20	18
+	+	32	27
+	+	22	22
+	+	30	23
+	+	20	0
+	+	30	2
+	+	30	24
+	+	32	17
+	+	30	9
+	+	28	3
+	+	29	23
+	+	16	32
+	+	29	27
+	+	30	2
+	+	30	5
+	+	32	5
+	+	32	26
+	+	32	27
+	+	16	10
+	+	32	27
+	+	16	10
+	+	19	1
+	+	20	2
+	+	21	2
+	+	22	3
+	+	23	3
+	+	24	4
+	+	25	4
+	+	26	3
+	+	27	2
+	+	28	1
+	+	29	1
+	+	30	1
+	+	30	4
+	+	32	4
+	+	35	0
+	+	30	2
+	+	16	12
+	+	31	23
+	+	32	1
+	+	32	2
+	+	34	11
+	+	17	0
+	+	29	27
+
+> ~/holbertonschool-low_level_programming/recursion/6-main.c
+	*	1666257689	0
+	"	30	0
+	^	30	1
+	.	30	0
+	+	30	0
+
+> ~/holbertonschool-low_level_programming/recursion/6-is_prime_number.c
+	*	1666257665	0
+	"	22	1
+	^	22	2
+	.	22	2
+	+	1	2
+	+	1	62
+	+	1	27
+	+	1	17
+	+	31	0
+	+	4	24
+	+	5	32
+	+	7	47
+	+	9	18
+	+	16	23
+	+	22	2
+	+	5	2
+	+	6	2
+	+	7	2
+	+	20	2
+	+	21	2
+	+	23	37
+	+	30	23
+	+	22	2
+
+> ~/holbertonschool-low_level_programming/recursion/5-sqrt_recursion.c
+	*	1666255845	0
+	"	36	14
+	^	36	15
+	.	36	14
+	+	1	77
+	+	2	1
+	+	1	78
+	+	2	1
+	+	1	60
+	+	2	19
 	+	2	3
+	+	2	10
+	+	2	18
+	+	2	0
+	+	2	33
+	+	2	27
+	+	2	0
+	+	2	2
+	+	1	0
+	+	2	0
+	+	2	1
+	+	2	2
+	+	2	0
+	+	2	1
+	+	2	2
+	+	2	9
+	+	2	2
+	+	2	7
+	+	2	0
+	+	2	7
+	+	2	0
+	+	37	0
+	+	1	0
+	+	5	50
+	+	6	41
+	+	7	21
+	+	9	26
+	+	11	32
+	+	13	1
+	+	15	10
+	+	17	20
+	+	21	5
+	+	22	10
+	+	23	28
+	+	27	62
+	+	28	4
+	+	30	40
+	+	32	24
+	+	34	5
+	+	36	25
+	+	23	14
+	+	36	14
 
-> /holbertonschool-zero_day/git/bash/best
-	*	1663747391	0
-	"	2	28
-	^	2	29
-	.	2	28
-	+	2	32
-	+	2	28
+> ~/holbertonschool-low_level_programming/argc_argv/3-mul.c
+	*	1666187204	0
+	"	23	0
+	^	23	1
+	.	23	0
+	+	12	0
+	+	7	1
+	+	6	14
+	+	12	2
+	+	3	19
+	+	12	0
+	+	12	2
+	+	12	11
+	+	12	20
+	+	12	33
+	+	12	66
+	+	12	5
+	+	12	0
+	+	12	11
+	+	3	0
+	+	1	19
+	+	2	0
+	+	12	1
+	+	23	0
 
-> /holbertonschool-zero_day/git/bash/school
-	*	1663746838	0
-	"	2	24
-	^	2	25
-	.	2	24
-	+	2	24
+> ~/holbertonschool-low_level_programming/argc_argv/2-args.c
+	*	1666185624	0
+	"	20	0
+	^	20	1
+	.	20	0
+	+	20	0
+
+> ~/holbertonschool-low_level_programming/argc_argv/1-args.c
+	*	1666185457	0
+	"	14	25
+	^	14	26
+	.	14	25
+	+	11	0
+	+	3	38
+	+	16	0
+	+	10	17
+	+	5	2
+	+	6	1
+	+	5	32
+	+	10	30
+	+	11	49
+	+	11	29
+	+	11	23
+	+	11	12
+	+	10	9
+	+	11	9
+	+	10	30
+	+	11	2
+	+	12	34
+	+	12	24
+	+	14	70
+	+	12	13
+	+	14	67
+	+	12	11
+	+	13	0
+	+	14	9
+	+	14	25
+
+> ~/holbertonschool-low_level_programming/argc_argv/0-whatsmyname.c
+	*	1666176860	0
+	"	14	14
+	^	14	15
+	.	14	14
+	+	19	11
+	+	18	2
+	+	12	11
+	+	15	19
+	+	12	0
+	+	13	1
+	+	14	14
+	+	14	16
+	+	14	56
+	+	16	0
+	+	17	0
+	+	18	0
+	+	18	2
+	+	20	0
+	+	19	10
+	+	10	8
+	+	2	3
+	+	8	2
+	+	14	1
+	+	18	0
+	+	15	1
+	+	16	2
+	+	17	1
+	+	14	14
+
+> ~/holbertonschool-low_level_programming/argc_argv/main.h
+	*	1666175884	0
+	"	1	0
+	^	6	0
+	.	6	0
+	+	6	30
+	+	6	0
+
+> ~/holbertonschool-low_level_programming/static_libraries/create_static_lib.sh
+	*	1666173365	0
+	"	9	18
+	^	9	19
+	.	9	14
+	+	8	58
+	+	5	51
+	+	9	14
+
+> ~/holbertonschool-low_level_programming/static_libraries/main.c
+	*	1666170810	0
+	"	7	0
+	^	7	1
+	.	7	0
+	+	7	0
+
+> ~/holbertonschool-low_level_programming/static_libraries/5-strstr.c
+	*	1666170485	0
+	"	8	0
+	^	8	1
+	.	7	14
+	+	1	17
+	+	2	0
+	+	9	0
+	+	6	54
+	+	6	41
+	+	7	14
+
+> ~/holbertonschool-low_level_programming/static_libraries/100-atoi.c
+	*	1666170440	0
+	"	5	7
+	^	5	8
+	.	5	7
+	+	1	0
+	+	2	0
+	+	1	16
+	+	7	0
+	+	6	11
+	+	5	7
+
+> ~/holbertonschool-low_level_programming/static_libraries/main.h
+	*	1666167700	0
+	"	25	0
+	^	25	0
+	.	24	44
+	+	5	21
+	+	24	44
+
+> ~/holbertonschool-low_level_programming/recursion/2-strlen_recursion.c
+	*	1666020631	0
+	"	14	1
+	^	14	2
+	.	14	0
+	+	10	2
+	+	10	6
+	+	10	7
+	+	10	8
+	+	10	0
+	+	10	32
+	+	10	13
+	+	10	26
+	+	10	2
+	+	10	26
+	+	10	0
+	+	17	0
+	+	12	0
+	+	14	0
+
+> ~/holbertonschool-low_level_programming/recursion/2-main.c
+	*	1666020302	0
+	"	16	0
+	^	16	1
+	.	16	0
+	+	16	0
+
+> ~/holbertonschool-low_level_programming/recursion/1-print_rev_recursion.c
+	*	1666019352	0
+	"	16	0
+	^	16	1
+	.	16	0
+	+	10	52
+	+	4	52
+	+	10	51
+	+	10	49
+	+	10	0
+	+	10	17
+	+	10	0
+	+	16	0
+
+> ~/holbertonschool-low_level_programming/recursion/main.h
+	*	1666017963	0
+	"	6	20
+	^	6	21
+	.	6	20
+	+	6	30
+	+	8	35
+	+	9	30
+	+	10	21
+	+	14	0
+	+	6	20
+
+> ~/holbertonschool-low_level_programming/recursion/1-main.c
+	*	1666017757	0
+	"	12	0
+	^	12	1
+	.	12	0
+	+	12	0
+
+> ~/holbertonschool-low_level_programming/recursion/0-puts_recursion.c
+	*	1666011147	0
+	"	10	0
+	^	10	0
+	.	10	0
+	+	8	2
+	+	7	20
+	+	5	21
+	+	4	34
+	+	9	121
+	+	9	50
+	+	9	41
+	+	9	85
+	+	9	107
+	+	9	46
+	+	9	119
+	+	18	0
+	+	10	0
+
+> ~/holbertonschool-low_level_programming/recursion/5-main.c
+	*	1666005587	0
+	"	26	0
+	^	26	1
+	.	26	0
+	+	26	0
+
+> ~/holbertonschool-low_level_programming/recursion/4-main.c
+	*	1666002108	0
+	"	26	0
+	^	26	1
+	.	26	0
+	+	26	0
+
+> ~/holbertonschool-low_level_programming/recursion/4-pow_recursion.c
+	*	1666002068	0
+	"	14	8
+	^	14	9
+	.	14	8
+	+	4	67
+	+	20	39
+	+	21	0
+	+	14	8
+
+> ~/holbertonschool-low_level_programming/recursion/3-factorial.c
+	*	1666001129	0
+	"	9	19
+	^	9	20
+	.	9	20
+	+	20	0
+	+	9	20
+
+> ~/holbertonschool-low_level_programming/recursion/3-main.c
+	*	1666001099	0
+	"	22	0
+	^	22	1
+	.	22	0
+	+	22	0
+
+> ~/holbertonschool-low_level_programming/recursion/0-main.c
+	*	1666000521	0
+	"	9	0
+	^	12	1
+	.	12	0
+	+	12	0

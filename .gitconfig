@@ -1,3 +1,5 @@
 [user]
 	email = groupierre.asia@gmail.com
 	name = AsiaGrpr
+[credential]
+	helper = "!f() { /root/.vscode-server/bin/8fa188b2b301d36553cbc9ce1b0a146ccb93351f/node /tmp/vscode-remote-containers-9dd3378dea0415b70020989b542cf77ca88dd81f.js $*; }; f"

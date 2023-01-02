@@ -1,0 +1,33 @@
+2022-11-14 06:43:53.737 [info] Extension host agent started.
+2022-11-14 06:43:54.022 [info] [127.0.0.1][54e86467][ManagementConnection] New connection established.
+2022-11-14 06:43:55.026 [info] [127.0.0.1][68348aed][ExtensionHostConnection] New connection established.
+2022-11-14 06:43:55.589 [info] [127.0.0.1][68348aed][ExtensionHostConnection] <484> Launched Extension Host Process.
+2022-11-14 06:43:59.703 [warning] No ptyHost heartbeat after 6 seconds
+2022-11-14 06:44:17.360 [info] [127.0.0.1][54e86467][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2022-11-14 06:44:17.416 [error] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+2022-11-14 06:44:17.452 [info] [127.0.0.1][68348aed][ExtensionHostConnection] <484> Extension Host Process exited with code: 0, signal: null.
+2022-11-14 06:44:57.495 [info] [127.0.0.1][423ae788][ManagementConnection] New connection established.
+2022-11-14 06:44:58.845 [info] [127.0.0.1][15a2037a][ExtensionHostConnection] New connection established.
+2022-11-14 06:44:58.956 [info] [127.0.0.1][15a2037a][ExtensionHostConnection] <2405> Launched Extension Host Process.
+2022-11-14 06:45:12.152 [info] [127.0.0.1][423ae788][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2022-11-14 06:45:12.183 [error] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+2022-11-14 06:45:12.224 [info] [127.0.0.1][15a2037a][ExtensionHostConnection] <2405> Extension Host Process exited with code: 0, signal: null.
+2022-11-14 06:45:15.394 [info] [127.0.0.1][4e5a1c06][ManagementConnection] New connection established.
+2022-11-14 06:45:16.796 [info] [127.0.0.1][57130f1d][ExtensionHostConnection] New connection established.
+2022-11-14 06:45:16.861 [info] [127.0.0.1][57130f1d][ExtensionHostConnection] <3554> Launched Extension Host Process.
+2022-11-14 06:59:24.969 [info] [127.0.0.1][4e5a1c06][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2022-11-14 06:59:25.064 [error] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+2022-11-14 06:59:25.397 [info] [127.0.0.1][57130f1d][ExtensionHostConnection] <3554> Extension Host Process exited with code: 0, signal: null.
+2022-11-14 06:59:28.692 [info] [127.0.0.1][f1bd1efd][ManagementConnection] New connection established.
+2022-11-14 06:59:29.807 [info] [127.0.0.1][e99c7ff6][ExtensionHostConnection] New connection established.
+2022-11-14 06:59:29.878 [info] [127.0.0.1][e99c7ff6][ExtensionHostConnection] <25388> Launched Extension Host Process.
+2022-11-14 06:59:35.654 [info] [127.0.0.1][f1bd1efd][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2022-11-14 06:59:35.786 [error] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+2022-11-14 06:59:35.839 [info] [127.0.0.1][e99c7ff6][ExtensionHostConnection] <25388> Extension Host Process exited with code: 0, signal: null.
+2022-11-14 06:59:39.492 [info] [127.0.0.1][113cdd08][ManagementConnection] New connection established.
+2022-11-14 06:59:41.126 [info] [127.0.0.1][59212003][ExtensionHostConnection] New connection established.
+2022-11-14 06:59:41.185 [info] [127.0.0.1][59212003][ExtensionHostConnection] <26731> Launched Extension Host Process.

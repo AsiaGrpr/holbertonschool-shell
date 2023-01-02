@@ -1,0 +1,25 @@
+2022-11-14 05:43:18.979 [info] Extension host with pid 3788 started
+2022-11-14 05:43:19.309 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2022-11-14 05:43:19.351 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/5f20f19108d2364e63ce52b0a41b53ca/vscode.lock': Lock acquired.
+2022-11-14 05:43:19.398 [error] No bundle location found for extension vscode.git-base
+2022-11-14 05:43:19.836 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2022-11-14 05:43:19.841 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2022-11-14 05:43:19.855 [error] No bundle location found for extension vscode.git
+2022-11-14 05:43:19.855 [error] No bundle location found for extension vscode.github
+2022-11-14 05:43:20.694 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2022-11-14 05:43:20.696 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+2022-11-14 05:43:20.699 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2022-11-14 05:43:20.701 [info] Eager extensions activated
+2022-11-14 05:43:20.802 [error] No bundle location found for extension vscode.debug-auto-launch
+2022-11-14 05:43:20.802 [error] No bundle location found for extension vscode.emmet
+2022-11-14 05:43:20.802 [error] No bundle location found for extension vscode.merge-conflict
+2022-11-14 05:44:19.150 [info] ExtensionService#_doActivateExtension ms-vscode.cpptools, startup: false, activationEvent: 'onLanguage:cpp'
+2022-11-14 05:49:11.519 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2022-11-14 05:49:11.527 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2022-11-14 05:49:11.571 [error] No bundle location found for extension vscode.extension-editing
+2022-11-14 05:49:11.571 [error] No bundle location found for extension vscode.markdown-language-features
+2022-11-14 05:49:13.913 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2022-11-14 05:49:13.970 [error] No bundle location found for extension vscode.markdown-math
+2022-11-14 06:09:20.900 [info] Extension host terminating: received terminate message from renderer
+2022-11-14 06:09:20.922 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/5f20f19108d2364e63ce52b0a41b53ca/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2022-11-14 06:09:21.422 [info] Extension host with pid 3788 exiting with code 0

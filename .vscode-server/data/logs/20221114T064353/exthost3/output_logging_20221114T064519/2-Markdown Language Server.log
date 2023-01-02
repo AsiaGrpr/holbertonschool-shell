@@ -1,0 +1,10 @@
+[Trace 14:46:49.976] VsCodeClientWorkspace: TextDocument.onDidOpen: file:///root/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 14:46:49.992] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 14:46:50.008] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 14:46:50.013] DocumentSymbolProvider: provideDocumentSymbols — file:///root/holbertonschool-low_level_programming/singly_linked_lists/README.md 1
+[Debug 14:46:50.016] LinkProvider: compute - file:///root/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 14:46:50.042] Server: connection.languages.diagnostics.on: file:///root/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Debug 14:46:50.432] MdFoldingProvider: provideFoldingRanges — file:///root/holbertonschool-low_level_programming/singly_linked_lists/README.md 1
+[Debug 14:46:50.435] TableOfContentsProvider: create - file:///root/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 14:46:52.671] VsCodeClientWorkspace: TextDocument.onDidClose: file:///root/holbertonschool-low_level_programming/singly_linked_lists/README.md
+[Trace 14:46:52.673] VsCodeClientWorkspace: deleteDocument: file:///root/holbertonschool-low_level_programming/singly_linked_lists/README.md
